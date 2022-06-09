@@ -69,6 +69,18 @@ May be you will asked me why should you read all of the issues here. The answer 
 	| Second Disk Drive | HGST 500GB |
 </details>
 
+<details>
+<summary>Example: Configure the smoother for a Haswell-based laptop with Intel HD Graphics 4600</summary>
+
+|     Device Property Name     | Type |   Value  |            Notes           |
+|:----------------------------:|:----:|:--------:|:--------------------------:|
+|   enable-backlight-smoother  | Data | 01000000 |     Enable the smoother    |
+|   backlight-smoother-steps   | Data | 19000000 | 25 (0x19) in little endian |
+|  backlight-smoother-interval | Data | 08000000 | 08 (0x08) in little endian |
+| backlight-smoother-threshold | Data | 00000000 | 00 (0x00) in little endian |
+
+</details>
+
 - macOS Supported
  	| macOS | Status |
 	| ------------- | ------------- | 
@@ -109,26 +121,7 @@ May be you will asked me why should you read all of the issues here. The answer 
 	| SD Card | ❌ | Can turn off by using SSDT to save battery |
 	| WWAN | ❌ | |
 	| FileVault | ⚠ | Untested |
-<details>
-<summary>Example: Configure the smoother for a Haswell-based laptop with Intel HD Graphics 4600</summary>
 
-The following kernel logs are dumped from a Haswell laptop when a user changes the brightness from the lowest level to the highest one.  
-Since the distance to the next level is relatively short, we use `N = 25` and `T = 8` instead,  
-making the graphics driver transition to the next brightness level in approximately 200 milliseconds.
-
-|     Device Property Name     | Type |   Value  |            Notes           |
-|:----------------------------:|:----:|:--------:|:--------------------------:|
-|   enable-backlight-smoother  | Data | 01000000 |     Enable the smoother    |
-|   backlight-smoother-steps   | Data | 19000000 | 25 (0x19) in little endian |
-|  backlight-smoother-interval | Data | 08000000 | 08 (0x08) in little endian |
-| backlight-smoother-threshold | Data | 00000000 | 00 (0x00) in little endian |
-
-As you can observe from the above log, the register value is `0x00` when the display is at the lowest brightness level.
-When the user presses a key to increase the brightness, the register value becomes `0x36`, 
-so in this case you may use a lowerbound, for example `0x18`, to prevent the display turning black.
-You may want to analyze the kernel log produced by the DEBUG version to find a lowerbound that best works for your laptop.
-
-</details>
 
 
 
