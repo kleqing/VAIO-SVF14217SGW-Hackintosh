@@ -52,7 +52,7 @@ May be you will asked me why should you read all of the issues here. The answer 
 
 ## Overview
 
-- System Specs (These specs i've showed here are not original, some hardware was changed or replaced!)
+- System Specs
 <br>
 |  Name  | More infomation |
 | --------- | -------------------------- |
@@ -65,7 +65,7 @@ May be you will asked me why should you read all of the issues here. The answer 
 | Wifi | BCM94352HMB |
 | Hard Disk Drive | Netac SSD 256GB|
 | Second Disk Drive | HGST 500GB |
-<br>
+- Caution: These specs i've showed here are not original, some hardware was changed or replaced!
 
 - macOS Supported
  	| macOS | Status |
