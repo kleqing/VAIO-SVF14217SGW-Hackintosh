@@ -3,6 +3,8 @@
 ![lspcon_debug](./img/desktop.png)
 <h6 align="center">Desktop preview</h6>
 
+## Alert: I will upload EFI after 12 hours left
+
 ## Attention: Please read all the issues I wrote here before you use this EFI!
 
 May be you will asked me why should you read all of the issues here. The answer is:
@@ -52,6 +54,8 @@ May be you will asked me why should you read all of the issues here. The answer 
 
 ## Overview
 
+- To make README.md file more clear, I just hide the specs. If you want to see it, just expand the "VAIO spectification"
+<br>
 - These spectification I showed to you here are not original, some hardware was changed or replaced!
 
 <details>
