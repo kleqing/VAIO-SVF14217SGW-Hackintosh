@@ -52,21 +52,20 @@ May be you will asked me why should you read all of the issues here. The answer 
 
 ## Overview
 
-- Caution: These specs i've showed here are not original, some hardware was changed or replaced!
-
-- System Specs
-| macOS | Status |
-| ------------- | ------------- | 
-| CPU | Intel Core i3 3227U 1.90 GHz |
-| GPU | Intel HD Graphics 4000 |
-| VGA | NVIDIA GeForce GT 740M |
-| Memory | 1333MHz DDR3 2x4GB |
-| Audio | Realtek ALC 233 |
-| Ethernet | Realtek RTL 8111 |
-| Wifi | BCM94352HMB |
-| Hard Disk Drive | Netac SSD 256GB|
-| Second Disk Drive | HGST 500GB |
-
+- System Specs (These specs i've showed here are not original, some hardware was changed or replaced!)
+	<br>
+	|  Name  | More infomation |
+	| --------- | -------------------------- |
+	| CPU | Intel Core i3 3227U 1.90 GHz |
+	| GPU | Intel HD Graphics 4000 |
+	| VGA | NVIDIA GeForce GT 740M |
+	| Memory | 1333MHz DDR3 2x4GB |
+	| Audio | Realtek ALC 233 |
+	| Ethernet | Realtek RTL 8111 |
+	| Wifi | BCM94352HMB |
+	| Hard Disk Drive | Netac SSD 256GB|
+	| Second Disk Drive | HGST 500GB |
+	<br>
 
 - macOS Supported
  	| macOS | Status |
