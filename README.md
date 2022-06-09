@@ -22,7 +22,8 @@ May be you will asked me why should you read all of the issues here. The answer 
 
 	<details>
 		<summary>OpenCore inject DSDT and BDOS issue on Windows</summary>
-		* As you now, OpenCore is my favourite bootloader because it supported more OSes and faster! 
+		<br>
+		As you now, OpenCore is my favourite bootloader because it supported more OSes and faster! 
 		Beside, there're also many error come with this bootloader. Like using DSDT instead SSDT. The main reason for this is there are lot of various kext support more hardware. That mean you needn't use DSDT anymore, only use SSDT and hot-patch. But the VAIO notebooks aren't! They required DDST to make macOS read their battery! And that mean OpenCore will inject our patched DSDT to all OSes and it cause BDOS on Windows! Luckily, Olarila have make a version to make OpenCore didn't inject patched DSDT to all OSes. You can check this: <a href="https://github.com/OlarilaHackintosh/OpenCore_NO_ACPI">OpenCore_No_ACPI</a>.
 		<br>
 		For more info about inject ACPI inject, you can read <a href="https://dortania.github.io/OpenCore-Install-Guide/why-oc.html#does-opencore-always-inject-smbios-and-acpi-data-into-other-oses">here.</a>
