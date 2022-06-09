@@ -1,6 +1,6 @@
 <h1 align="center">Sony VAIO SVF14217SGW Hackintosh</h1> 
 
-![lspcon_debug](./img/desktop.png)
+![lspcon_debug](./img/desktop.jpg)
 <h6 align="center">Desktop preview</h6>
 
 ## Alert: I will upload EFI after 12 hours left
