@@ -71,7 +71,7 @@ May be you will asked me why should you read all of the issues here. The answer 
 
 <details>
 <summary>Example: Configure the smoother for a Haswell-based laptop with Intel HD Graphics 4600</summary>
-
+<br>
 |     Name     | More infomation | 
 |:-----------:|:---------------------:|
 |   CPU  | Intel Core i3 3227U 1.90 GHz |
