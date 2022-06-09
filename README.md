@@ -1,6 +1,7 @@
-<h1 align="center">SVF14217SGW Hackintosh</h1> 
+<h1 align="center">Sony VAIO SVF14217SGW Hackintosh</h1> 
 
 ![lspcon_debug](./img/desktop.png)
+<small algin="center">Preview</small>
 
 ## Attention: Please read all the issues I wrote here before you use this EFI!
 
@@ -11,6 +12,7 @@ May be you will asked me why should you read all of the issues here. The answer 
 * Issues:
 	<details>
 		<summary>Dual Booting</summary>
+		<br>
 		For some reason, almost VAIO notebooks come from 2016 or older (I donn't sure about that!) didn't have any option in UEFI called: 'Boot Priority'. So, that mean there're many challenge come with that. To fixed this, we inly have 1 solution: Using EasyUEFI to custom boot entry! Download <a href="https://www.easyuefi.com/index-us.html">EasyUEFI</a>
 		<br>
 		<br>
@@ -22,8 +24,9 @@ May be you will asked me why should you read all of the issues here. The answer 
 	<details>
 		<summary>OpenCore inject DSDT and BDOS issue on Windows</summary>
 		<br>
-		As you now, OpenCore is my favourite bootloader because it supported more OSes and faster! 
-		Beside, there're also many error come with this bootloader. Like using DSDT instead SSDT. The main reason for this is there are lot of various kext support more hardware. That mean you needn't use DSDT anymore, only use SSDT and hot-patch. But the VAIO notebooks aren't! They required DDST to make macOS read their battery! And that mean OpenCore will inject our patched DSDT to all OSes and it cause BDOS on Windows! 
+		As you now, OpenCore is my favourite bootloader because it supported more OSes and faster than Chameleon (Legacy) and Clover!
+		<br>
+		Beside, there're also many error come with this bootloader. Like using DSDT instead SSDT. The main reason for this is there are lot of various kext support more hardware. That mean you needn't use DSDT anymore, only use SSDT and hot-patch. But the VAIO notebooks aren't! They required DDST to make macOS read their battery! (Basically, <a href="https://github.com/1Revenger1/ECEnabler">ECEnabler</a> didn't work with some VAIO notebooks, they need DSDT to read the battery). And that mean OpenCore will inject our patched DSDT to all OSes and it cause BDOS on Windows! 
 		<br>
 		Luckily, Olarila have make a version to make OpenCore didn't inject patched DSDT to all OSes. You can check this: <a href="https://github.com/OlarilaHackintosh/OpenCore_NO_ACPI">OpenCore_No_ACPI</a>
 		<br>
@@ -37,11 +40,12 @@ May be you will asked me why should you read all of the issues here. The answer 
 		This is the true of pain on the VAIO notebook. As you now, Apple has removed NVIDIA Web Driver since macOS Mojave (10.14). That mean you can use Web Driver on 10.13.6 or older. Although you can turn off dGPU via UEFI, but as a gammer (i.e Genshin player) i cann't do that. Becasue if i want to go to Windows to play games, i have to go to UEFI and turn dGPU on, and when i want to use macOS, i have to repeat the action again. Seems like it will cost a lot of time! Dortania has showed a guide that turn dGPU off, you can read <a href="https://dortania.github.io/OpenCore-Install-Guide/extras/spoof.html#windows-gpu-selection">here</a> 
 		<br>
 		<br>
-		Unfortunately, all VAIO notebooks doesn't have any option call NVIDIA Optimus! That mean you only have 2 choice:
+		Unfortunately, all VAIO notebooks doesn't have any option call NVIDIA Optimus! That mean you only have 2 options:
 			<br> 
 			1. Disable dGPU via UEFI
 			<br> 
 			2. Turn dGPU to s4 state (I use this method with disable dGPU via Device Properties to make my battery didn't drain too much)
+		<br>
 		<br>
 		I recommend using option 1. But if you're a gammer, option 2 is the best choice!
 	</details>
