@@ -1,4 +1,4 @@
-# SVF14217SGW Hackintosh
+<h1 align="center">SVF14217SGW Hackintosh</h1> 
 
 ![lspcon_debug](./img/desktop.png)
 
@@ -54,7 +54,7 @@ To make READEME.md clean, i will hide my laptop specs. But if you want to see my
 	| 10.15 | ✅ | 
 	| 11.0 | ✅ |
 	| 12.0 | Untested |  
-- Bootloader: OpenCore 0.8.1 Mod <a href="https://github.com/OlarilaHackintosh/OpenCore_NO_ACPI">OpenCore_No_ACPI</a>
+- Bootloader: OpenCore 0.8.1 Mod (<a href="https://github.com/OlarilaHackintosh/OpenCore_NO_ACPI">OpenCore_No_ACPI</a>)
 
 - 💾 UEFI Config
 	* Secure Boot: Disable (I've tried changed key but it will make break the system bootloader)
@@ -79,7 +79,7 @@ To make READEME.md clean, i will hide my laptop specs. But if you want to see my
 	| Headphone & Speaker | ✅ | |
 	| Camera | ✅ | |
 	| Wifi & Bluetooth | ✅ | Need to replace |
-	| Airdrop & Handoff | ✅ | |
+	| Airdrop & Handoff | ✅ | Required wifi card support bluetooth 4.0 |
 	| iMessage, Facetime & AppStore | ✅| |
 	| Sleep | ✅ | Lid close have delay to sleep |
 	| HDMI |  ✅ | HDMI Audio are working to! |
