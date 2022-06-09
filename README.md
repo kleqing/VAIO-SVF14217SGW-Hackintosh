@@ -55,20 +55,21 @@ May be you will asked me why should you read all of the issues here. The answer 
 To make READEME.md clean, i will hide my laptop specs. But if you want to see my specs, you can expand "Specs" 
 
 <details>
-	<summary>System Specs</summary>
-	These specs i've showed here are not original, some hardware was changed or replaced!
-	<br>
-		| Feature | Status |
-		| ------------- | ------------- |
-		| CPU | Intel(R) Core(TM) i3 3227U 1.9GHz |
-		| GPU | Intel(R) HD Graphics 4000 |
-		| VGA | NVIDIA GeForce GT 740M |
-		| Memory | 1333MHz DDR3 2x4GB |
-		| Audio | Realtek ALC 233 |
-		| Ethernet | Realtek RTL 8111 |
-		| Wifi | BCM94352HMB |
-		| Hard Disk Drive | Netac SSD 256GB|
-		| Second Disk Drive | HGST 500GB |
+<summary>System Specs</summary>
+<br>
+These specs i've showed here are not original, some hardware was changed or replaced!
+<br>
+| Feature | Status |
+| ------------- | ------------- |
+| CPU | Intel(R) Core(TM) i3 3227U 1.9GHz |
+| GPU | Intel(R) HD Graphics 4000 |
+| VGA | NVIDIA GeForce GT 740M |
+| Memory | 1333MHz DDR3 2x4GB |
+| Audio | Realtek ALC 233 |
+| Ethernet | Realtek RTL 8111 |
+| Wifi | BCM94352HMB |
+| Hard Disk Drive | Netac SSD 256GB|
+| Second Disk Drive | HGST 500GB |
 </details>
 - macOS Supported
  	| macOS | Status |
