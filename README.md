@@ -34,9 +34,9 @@ May be you will asked me why should you read all of the issues here. The answer 
 		This is the true of pain on the VAIO notebook. As you now, Apple has removed NVIDIA Web Driver since macOS Mojave (10.14). That mean you can use Web Driver on 10.13.6 or older. Although you can turn off dGPU via UEFI, but as a gammer (i.e Genshin player) i cann't do that. Becasue if i want to go to Windows to play games, i have to go to UEFI and turn dGPU on, and when i want to use macOS, i have to repeat the action again. Seems like it will cost a lot of time! Dortania has showed a guide that turn dGPU off, you can read <a href="https://dortania.github.io/OpenCore-Install-Guide/extras/spoof.html#windows-gpu-selection">here.</a> 
 		<br>
 		Unfortunately, all VAIO notebooks doesn't have any option call NVIDIA Optimus! That mean you only have 2 choice:
-		<br> 
+			<br> 
 			- Disable dGPU via UEFI
-		<br> 
+			<br> 
 			- Turn dGPU to s4 state (I use this method with disable dGPU via Device Properties to make my battery didn't drain too much)
 		<br>
 		I recommend using option 1. But if you're a gammer, option 2 is the best choice!
