@@ -58,9 +58,8 @@ To make READEME.md clean, i will hide my laptop specs. But if you want to see my
 <summary>System Specs</summary>
 <br>
 These specs i've showed here are not original, some hardware was changed or replaced!
-<br>
-| Feature | Status |
-|:-------------:|:--------------------------:|
+|  Name  | More infomation |
+|:---------:|:--------------------------:|
 | CPU | Intel(R) Core(TM) i3 3227U 1.9GHz |
 | GPU | Intel(R) HD Graphics 4000 |
 | VGA | NVIDIA GeForce GT 740M |
