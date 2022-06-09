@@ -52,12 +52,8 @@ May be you will asked me why should you read all of the issues here. The answer 
 
 ## Overview
 
-To make READEME.md clean, i will hide my laptop specs. But if you want to see my specs, you can expand "Specs" 
-
-<details>
-<summary>System Specs</summary>
+System Specs
 <br>
-These specs i've showed here are not original, some hardware was changed or replaced!
 |  Name  | More infomation |
 |:---------:|:--------------------------:|
 | CPU | Intel(R) Core(TM) i3 3227U 1.9GHz |
@@ -70,7 +66,8 @@ These specs i've showed here are not original, some hardware was changed or repl
 | Hard Disk Drive | Netac SSD 256GB|
 | Second Disk Drive | HGST 500GB |
 <br>
-</details>
+These specs i've showed here are not original, some hardware was changed or replaced!
+
 - macOS Supported
  	| macOS | Status |
 	| ------------- | ------------- | 
@@ -78,6 +75,7 @@ These specs i've showed here are not original, some hardware was changed or repl
 	| 10.15 | ✅ | 
 	| 11.0 | ✅ |
 	| 12.0 | Untested |  
+
 - Bootloader: OpenCore 0.8.1 Mod (<a href="https://github.com/OlarilaHackintosh/OpenCore_NO_ACPI">OpenCore_No_ACPI</a>)
 
 - 💾 UEFI Config
