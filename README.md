@@ -34,20 +34,18 @@ May be you will asked me why should you read all of the issues here. The answer 
 
 To make READEME.md clean, i will hide my laptop specs. But if you want to see my specs, you can expand "Specs" 
 
-<details>
-	<summary>Specs</summary>
-		| Feature | Status |
-		| ------------- | ------------- |
-		| CPU | Intel(R) Core(TM) i3 3227U 1.9GHz |
-		| GPU | Intel(R) HD Graphics 4000 |
-		| VGA | NVIDIA GeForce GT 740M |
-		| Memory | 1333MHz DDR3 2x4GB |
-		| Audio | Realtek ALC 233 |
-		| Ethernet | Realtek RTL 8111 |
-		| Wifi | BCM94352HMB |
-		| Hard Disk Drive | Netac SSD 256GB|
-		| Caddy Bay | HGST 500GB |
-</details>
+- Specs
+	| Feature | Status |
+	| ------------- | ------------- |
+	| CPU | Intel(R) Core(TM) i3 3227U 1.9GHz |
+	| GPU | Intel(R) HD Graphics 4000 |
+	| VGA | NVIDIA GeForce GT 740M |
+	| Memory | 1333MHz DDR3 2x4GB |
+	| Audio | Realtek ALC 233 |
+	| Ethernet | Realtek RTL 8111 |
+	| Wifi | BCM94352HMB |
+	| Hard Disk Drive | Netac SSD 256GB|
+	| Second Disk Drive | HGST 500GB |
 
 - macOS Supported
  	| macOS | Status |
@@ -65,7 +63,7 @@ To make READEME.md clean, i will hide my laptop specs. But if you want to see my
 	* External boot device: Enable
 	* Wake on LAN: Unsupported
 
-<strong>Current Status</strong>
+- Current Status
 	| Feature | Status | Note |
 	| ------------- | ------------- | ------------- | 
 	| CPU | ✅ | |
