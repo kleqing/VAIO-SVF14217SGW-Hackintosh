@@ -52,25 +52,10 @@ May be you will asked me why should you read all of the issues here. The answer 
 
 ## Overview
 
-- These specs I showed to you here are not original, some hardware was changed or replaced!
+- These spectification I showed to you here are not original, some hardware was changed or replaced!
 
 <details>
-<summary>System Specs</summary>
-	|    |  |
-	| --------- | -------------------------- |
-	| CPU | Intel Core i3 3227U 1.90 GHz |
-	| GPU | Intel HD Graphics 4000 |
-	| VGA | NVIDIA GeForce GT 740M |
-	| Memory | 1333MHz DDR3 2x4GB |
-	| Audio | Realtek ALC 233 |
-	| Ethernet | Realtek RTL 8111 |
-	| Wifi | BCM94352HMB |
-	| Hard Disk Drive | Netac SSD 256GB|
-	| Second Disk Drive | HGST 500GB |
-</details>
-
-<details>
-<summary>Example: Configure the smoother for a Haswell-based laptop with Intel HD Graphics 4600</summary>
+<summary>VAIO spectification</summary>
 
 |     Name     | More infomation | 
 |:-----------:|:---------------------:|
@@ -88,7 +73,7 @@ May be you will asked me why should you read all of the issues here. The answer 
 
 - macOS Supported
  	| macOS | Status |
-	| ------------- | ------------- | 
+	| ------- | -------- | 
 	| 10.14 | ✅ | 
 	| 10.15 | ✅ | 
 	| 11.0 | ✅ |
