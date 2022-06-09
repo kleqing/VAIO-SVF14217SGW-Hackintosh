@@ -1,12 +1,12 @@
 <h1 align="center">Sony VAIO SVF14217SGW Hackintosh</h1> 
 
 ![lspcon_debug](./img/desktop.png)
-<h6 align="center">Preview</h6>
+<h6 align="center">Desktop preview</h6>
 
 ## Attention: Please read all the issues I wrote here before you use this EFI!
 
 May be you will asked me why should you read all of the issues here. The answer is:
-- The VAIO notebooks series are the hardest notebook to Hackintosh. The main reason is it didn't support 'Boot Priority' in UEFI!
+- The VAIO notebooks series are the hardest notebook to Hackintosh. The main reason is it didn't support select "Boot Priority" in UEFI!
 - Required DSDT to patch to make some hardware working, not SSDT (except: GPU, etc.)
 
 * Issues:
@@ -54,6 +54,7 @@ May be you will asked me why should you read all of the issues here. The answer 
 
 To make READEME.md clean, i will hide my laptop specs. But if you want to see my specs, you can expand "Specs" 
 
+<details>
 - Specs
 	| Feature | Status |
 	| ------------- | ------------- |
@@ -66,7 +67,7 @@ To make READEME.md clean, i will hide my laptop specs. But if you want to see my
 	| Wifi | BCM94352HMB |
 	| Hard Disk Drive | Netac SSD 256GB|
 	| Second Disk Drive | HGST 500GB |
-
+</details>
 - macOS Supported
  	| macOS | Status |
 	| ------------- | ------------- | 
@@ -88,11 +89,11 @@ To make READEME.md clean, i will hide my laptop specs. But if you want to see my
 	| ------------- | ------------- | ------------- | 
 	| CPU | ✅ | |
 	| GPU | ✅ | |
-	| VGA | ❌ | Make it go to s4 or turn off in UEFI |
+	| VGA | ❌ | Can get it turn to s4 state or turn off in UEFI |
 	| Fn Key | ✅ | Requied patching DSDT for brightness key |
 	| Brightness | ✅ | |
 	| USB Port | ✅ | Recommend mapping in macOS using USBToolBox |
-	| Audio | ✅ | Add alcid=27 to boot-arg |
+	| Audio | ✅ | Add `alcid=27` to boot-arg |
 	| Battery | ✅ | Requied patching DSDT |
 	| TouchPad | ✅ | Some time it cause reboot at boot |
 	| Build-in Microphone | ✅ | |
@@ -101,9 +102,9 @@ To make READEME.md clean, i will hide my laptop specs. But if you want to see my
 	| Wifi & Bluetooth | ✅ | Need to replace |
 	| Airdrop & Handoff | ✅ | Required wifi card support bluetooth 4.0 |
 	| iMessage, Facetime & AppStore | ✅| |
-	| Sleep | ✅ | Lid close have delay to sleep |
+	| Sleep | ✅ | Lid close get delay to sleep |
 	| HDMI |  ✅ | HDMI Audio are working to! |
-	| SD Card | ❌ | Can turn off using SSDT to save battery |
+	| SD Card | ❌ | Can turn off by using SSDT to save battery |
 	| WWAN | ❌ | |
 	| FileVault | ⚠ | Untested |
 
