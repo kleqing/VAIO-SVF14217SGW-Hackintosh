@@ -53,8 +53,7 @@ May be you will asked me why should you read all of the issues here. The answer 
 ## Overview
 
 - System Specs
-<br>
-|  Name  | More infomation |
+|  Name | More infomation |
 | --------- | -------------------------- |
 | CPU | Intel Core i3 3227U 1.90 GHz |
 | GPU | Intel HD Graphics 4000 |
