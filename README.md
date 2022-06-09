@@ -1,7 +1,7 @@
 <h1 align="center">Sony VAIO SVF14217SGW Hackintosh</h1> 
 
 ![lspcon_debug](./img/desktop.png)
-<li align="center">Preview</li>
+<span> align="center">Preview</span>
 
 ## Attention: Please read all the issues I wrote here before you use this EFI!
 
