@@ -60,7 +60,7 @@ To make READEME.md clean, i will hide my laptop specs. But if you want to see my
 These specs i've showed here are not original, some hardware was changed or replaced!
 <br>
 | Feature | Status |
-| ------------- | ------------- |
+|:-------------:|:--------------------------:|
 | CPU | Intel(R) Core(TM) i3 3227U 1.9GHz |
 | GPU | Intel(R) HD Graphics 4000 |
 | VGA | NVIDIA GeForce GT 740M |
@@ -70,6 +70,7 @@ These specs i've showed here are not original, some hardware was changed or repl
 | Wifi | BCM94352HMB |
 | Hard Disk Drive | Netac SSD 256GB|
 | Second Disk Drive | HGST 500GB |
+<br>
 </details>
 - macOS Supported
  	| macOS | Status |
