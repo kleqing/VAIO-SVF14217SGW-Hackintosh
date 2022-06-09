@@ -52,8 +52,10 @@ May be you will asked me why should you read all of the issues here. The answer 
 
 ## Overview
 
-- System Specs (These specs i've showed here are not original, some hardware was changed or replaced!)
-	<br>
+- These specs I showed to you here are not original, some hardware was changed or replaced!
+
+<details>
+<summary>System Specs</summary>
 	|  Name  | More infomation |
 	| --------- | -------------------------- |
 	| CPU | Intel Core i3 3227U 1.90 GHz |
@@ -65,7 +67,7 @@ May be you will asked me why should you read all of the issues here. The answer 
 	| Wifi | BCM94352HMB |
 	| Hard Disk Drive | Netac SSD 256GB|
 	| Second Disk Drive | HGST 500GB |
-	<br>
+</details>
 
 - macOS Supported
  	| macOS | Status |
