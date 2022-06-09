@@ -56,7 +56,7 @@ May be you will asked me why should you read all of the issues here. The answer 
 
 <details>
 <summary>System Specs</summary>
-	|  Name  | More infomation |
+	|    |  |
 	| --------- | -------------------------- |
 	| CPU | Intel Core i3 3227U 1.90 GHz |
 	| GPU | Intel HD Graphics 4000 |
@@ -72,12 +72,17 @@ May be you will asked me why should you read all of the issues here. The answer 
 <details>
 <summary>Example: Configure the smoother for a Haswell-based laptop with Intel HD Graphics 4600</summary>
 
-|     Device Property Name     | Type |   Value  |            Notes           |
-|:----------------------------:|:----:|:--------:|:--------------------------:|
-|   enable-backlight-smoother  | Data | 01000000 |     Enable the smoother    |
-|   backlight-smoother-steps   | Data | 19000000 | 25 (0x19) in little endian |
-|  backlight-smoother-interval | Data | 08000000 | 08 (0x08) in little endian |
-| backlight-smoother-threshold | Data | 00000000 | 00 (0x00) in little endian |
+|     Name     | More infomation | 
+|:-----------:|:---------------------:|
+|   CPU  | Intel Core i3 3227U 1.90 GHz |
+|   GPU   | Intel HD Graphics 4000 | 
+|  VGA | NVIDIA GeForce GT 740M |
+| Memory | 1333MHz DDR3 2x4GB |
+| Audio | Realtek ALC 233 |
+| Ethernet | Realtek RTL 8111 |
+| Wifi | BCM94352HMB |
+| Hard Disk Drive | Netac SSD 256GB |
+| Second Disk Drive | HGST 500GB |
 
 </details>
 
