@@ -3,8 +3,6 @@
 ![lspcon_debug](./img/desktop.jpg)
 <h6 align="center">Desktop preview</h6>
 
-## Alert: I will upload EFI after 12 hours left
-
 ## Attention: Please read all the issues I wrote here before you use this EFI!
 
 May be you will asked me why should you read all of the issues here. The answer is:
@@ -55,8 +53,9 @@ May be you will asked me why should you read all of the issues here. The answer 
 ## Overview
 
 - To make README.md file more clear, I just hide the specs. If you want to see it, just expand the "VAIO spectification"
-<br>
+
 - These spectification I showed to you here are not original, some hardware was changed or replaced!
+<br>
 
 <details>
 <summary>VAIO spectification</summary>
@@ -103,7 +102,7 @@ May be you will asked me why should you read all of the issues here. The answer 
 	| USB Port | ✅ | Recommend mapping in macOS using USBToolBox |
 	| Audio | ✅ | Add `alcid=27` to boot-arg |
 	| Battery | ✅ | Requied patching DSDT |
-	| TouchPad | ✅ | Some time it cause reboot at boot |
+	| TouchPad | ✅ | Only working if using the <a href="https://github.com/kleqing/VoodooPS2/">Moded</a> kext |
 	| Build-in Microphone | ✅ | |
 	| Headphone & Speaker | ✅ | |
 	| Camera | ✅ | |
@@ -116,7 +115,19 @@ May be you will asked me why should you read all of the issues here. The answer 
 	| WWAN | ❌ | |
 	| FileVault | ⚠ | Untested |
 
+## Changelog
 
+- 06/10/2022
+	* Release with OC Mod 0.8.1, all kext are up to date
 
+## Attention
 
+- Some feature are not working correctly like 'Screen mirroring'. I will tried to fixed it later
+- Please change my SMBIOS in config.plist to your SMBIOS. You can use <a href="https://github.com/corpnewt/GenSMBIOS">GenSMBIOS</a>
+- I always update kext and bootloader, so you don't worry about this!
 
+## Credits
+
+- <a href="apple.com">Apple</a> for macOS.
+- Acidanthera, Mieze, USBToolBox, etc. for all the kext
+- Rehabman for the DSDT patch
