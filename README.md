@@ -3,10 +3,11 @@
 ![lspcon_debug](./img/desktop.jpg)
 <h6 align="center">Desktop preview</h6>
 
-## This project will be shutting down because VoodooPS2Controller.kext cause a boot loop when booting first time with OC
+## Attention: Please read all the issues I wrote here before you use this EFI!
 
-- Also Hackintosh will dead soon because Apple had introduced their new chip: Apple Silicon (ARM), which mean macOS will soon not supported x86 (Intel) any more.
-- This (may be) the last Hackintosh project i've made. If acidanthera updated their kext to newest version (Which has fixed the boot loop error), i will come back and update the EFI!
+May be you will asked me why should you read all of the issues here. The answer is:
+- The VAIO notebooks series are the hardest notebook to Hackintosh. The main reason is it didn't support select "Boot Priority" in UEFI!
+- Required DSDT to patch to make some hardware working, not SSDT (except: GPU, etc.)
 
 * Issues:
 	<details>
