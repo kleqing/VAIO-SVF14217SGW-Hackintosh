@@ -77,12 +77,13 @@ May be you will asked me why should you read all of the issues here. The answer 
 - macOS Supported
  	| macOS | Status |
 	| ------- | -------- | 
+	| 10.13 | ✅ (Best battery life) | 
 	| 10.14 | ✅ | 
-	| 10.15 | ✅ | 
-	| 11.0 | ✅ |
-	| 12.0 | Untested |  
+	| 10.15 | ✅ (Stable with VoodooPS2) | 
+	| 11.0 | ✅ (Not recommend) |
+	| 12.0 | ❌ (SMBIOS and GPU issues) |  
 
-- Bootloader: OpenCore 0.8.1 Mod (<a href="https://github.com/OlarilaHackintosh/OpenCore_NO_ACPI">OpenCore_No_ACPI</a>)
+- Bootloader: OpenCore 0.8.2 Mod (<a href="https://www.olarila.com/topic/24542-opencore_no_acpi-opencore-with-additional-featureschanges-implemented-how-to-use-this-fork/">OpenCore_No_ACPI</a>)
 
 - 💾 UEFI Config
 	* Secure Boot: Disable (I've tried changed key but it will make break the system bootloader)
@@ -96,13 +97,13 @@ May be you will asked me why should you read all of the issues here. The answer 
 	| ------------- | ------------- | ------------- | 
 	| CPU | ✅ | |
 	| GPU | ✅ | |
-	| VGA | ❌ | Can get it turn to s4 state or turn off in UEFI |
+	| dGPU | ❌ | Can get it turn to s4 state (with turn off patched) or turn off in UEFI |
 	| Fn Key | ✅ | Requied patching DSDT for brightness key |
 	| Brightness | ✅ | |
 	| USB Port | ✅ | Recommend mapping in macOS using USBToolBox |
-	| Audio | ✅ | Add `alcid=27` to boot-arg |
+	| Audio | ✅ | Add `alcid=27` to boot-arg or add layout-id to DeviceProperties |
 	| Battery | ✅ | Requied patching DSDT |
-	| TouchPad | ✅ | Only working if using the <a href="https://github.com/kleqing/VoodooPS2/">Moded</a> kext |
+	| TouchPad | ✅ | Rebooting issues with Big Sur. Catalina and older are stable |
 	| Build-in Microphone | ✅ | |
 	| Headphone & Speaker | ✅ | |
 	| Camera | ✅ | |
@@ -124,7 +125,11 @@ May be you will asked me why should you read all of the issues here. The answer 
 	* Bump OC to 0.8.2 (Moded)
 	* Fix DSDT issues (SMBUS, RTC, etc.)
 	* Clean boot arg
-	* Add new kext
+	* Update kext
+	* Use FakeSMC instead of VirtualSMC to make macOS detected battery better
+	* Fixed boot loop with HDMI port
+	* Fixed Power management
+	* Add new feature: Enable TRIM without use terminal to force enable
 
 ## Attention
 
@@ -137,3 +142,4 @@ May be you will asked me why should you read all of the issues here. The answer 
 - <a href="apple.com">Apple</a> for macOS.
 - Acidanthera, Mieze, USBToolBox, etc. for all the kext
 - Rehabman for the DSDT patch
+- Olarila for Bootloader
