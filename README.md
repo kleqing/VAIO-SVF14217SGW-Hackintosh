@@ -60,6 +60,8 @@ May be you will asked me why should you read all of the issues here. The answer 
 <details>
 <summary>VAIO spectification</summary>
 
+<br>
+
 |     Name     | More infomation | 
 |:-----------:|:---------------------:|
 |   CPU  | Intel Core i3 3227U 1.90 GHz |
