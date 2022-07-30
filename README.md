@@ -128,28 +128,29 @@
 <details>
 <summary>2.0</summary>
 	- 07/05/2022
-		- Bump OC to 0.8.2 (Moded)
-		- Fix DSDT issues (SMBUS, RTC, etc.)
-		- Clean boot arg
-		- Update kext
-		- Use FakeSMC instead of VirtualSMC to make macOS detected battery better
-		- Fixed boot loop with HDMI port
-		- Fixed Power management
-		- Add new feature: Enable TRIM without use terminal to force enable
+	<br>
+		- Bump OC to 0.8.2 (Moded)<br>
+		- Fix DSDT issues (SMBUS, RTC, etc.)<br>
+		- Clean boot arg<br>
+		- Update kext<br>
+		- Use FakeSMC instead of VirtualSMC to make macOS detected battery better<br>
+		- Fixed boot loop with HDMI port<br>
+		- Fixed Power management<br>
+		- Add new feature: Enable TRIM without use terminal to force enable<br>
 </details>
 
 <details>
 <summary>2.1</summary>
-	- 07/30/2022
-		* NEW: Now you can rename CPU via `/config.plist/NVRAM/4D1FDA02-38C7-4A6A-9CC6-4BCCA8B30102/revcpuname`. Added memory tab in 'About this mac'. Also you can rename your GPU via `/config.plist/DeviceProperties/PciRoot(0x0)/Pci(0x2,0x0)/model`
-		* Brand new DSDT: Fix battery always show as 'Power Adaper', remove iGPU patched to fix broken Finder (11.6.8) and DRM issues. Fix macOS always get delayed to sleep.
-		* Downgrade VoodooPS2 from 2.2.9 to 2.2.4 to make system booting better (No more issues with VoodooPS2 when booting)
-		* Remove unnecessary patched in `/config.plist/ACPI/patched`. Add USB renamed patched to fix sleep issues.  
-		* Add SSDT-USB-Reset.aml for USB renamed. Added SSDT-PM.aml, SSDT-PNLF.aml and SSDT-EC.aml. EC, PNLF and PM has been removed in DSDT to make system working better.
-		* Update all kexts to lastest version (except VoodooPS2)
-		* Fix HDMI conX issues. Remove framebuffer-conx-pipe in `DeviceProperties` because my hacks didn't reboot when hdmi is pluged-in. Added support HDMI 2.0.
-		* Add boot-arg to support Sidecar on old iPad, allow rename CPU and bootloop problem with Big Sur
-		* VirtualSMC now be used for this version.
+	- 07/30/2022<br>
+		* NEW: Now you can rename CPU via `/config.plist/NVRAM/4D1FDA02-38C7-4A6A-9CC6-4BCCA8B30102/revcpuname`. Added memory tab in 'About this mac'. Also you can rename your GPU via `/config.plist/DeviceProperties/PciRoot(0x0)/Pci(0x2,0x0)/model`<br>
+		* Brand new DSDT: Fix battery always show as 'Power Adaper', remove iGPU patched to fix broken Finder (11.6.8) and DRM issues. Fix macOS always get delayed to sleep.<br>
+		* Downgrade VoodooPS2 from 2.2.9 to 2.2.4 to make system booting better (No more issues with VoodooPS2 when booting)<br>
+		* Remove unnecessary patched in `/config.plist/ACPI/patched`. Add USB renamed patched to fix sleep issues. <br> 
+		* Add SSDT-USB-Reset.aml for USB renamed. Added SSDT-PM.aml, SSDT-PNLF.aml and SSDT-EC.aml. EC, PNLF and PM has been removed in DSDT to make system working better.<br>
+		* Update all kexts to lastest version (except VoodooPS2)<br>
+		* Fix HDMI conX issues. Remove framebuffer-conx-pipe in `DeviceProperties` because my hacks didn't reboot when hdmi is pluged-in. Added support HDMI 2.0.<br>
+		* Add boot-arg to support Sidecar on old iPad, allow rename CPU and bootloop problem with Big Sur<br>
+		* VirtualSMC now be used for this version.<br>
 </details>
 
 ## Attention
