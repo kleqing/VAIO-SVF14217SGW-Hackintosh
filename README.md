@@ -78,14 +78,14 @@
 | 12.0 | ❌ (SMBIOS and GPU issues) |
 
 </details>
-
+<br>
 <details>
  <summary>🛠 UEFI Config</summary>
-	* Secure Boot: Disable (Please don't tried to replace the secure boot key. It might break the system bootloader)
-	* Boot mode: UEFI
-	* 1st boot priority: External Device
-	* External boot device: Enable
-	* Wake on LAN: Unsupported
+	<br>Secure Boot: Disable (Please don't tried to replace the secure boot key. It might break the system bootloader)<br>
+	Boot mode: UEFI<br>
+	1st boot priority: External Device<br>
+	External boot device: Enable<br>
+	Wake on LAN: Unsupported<br>
 </details>
 
 - Current Status
