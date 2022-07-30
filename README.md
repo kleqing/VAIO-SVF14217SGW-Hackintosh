@@ -66,7 +66,7 @@
 </details>
 <br>
 <details>
-<summary>Laptop spectification</summary>
+<summary>Which macOS does the EFI supported for?</summary>
 
 <br>
 
@@ -80,7 +80,6 @@
 
 </details>
 
-- Bootloader: OpenCore 0.8.2 Mod (<a href="https://www.olarila.com/topic/24542-opencore_no_acpi-opencore-with-additional-featureschanges-implemented-how-to-use-this-fork/">OpenCore_No_ACPI</a>)
 <details>
  <summary>💾 UEFI Config</summary>
 	* Secure Boot: Disable (Please don't tried to replace the secure boot key. It might break the system bootloader)
@@ -115,13 +114,18 @@
 	| FileVault | ⚠️ | Untested |
 	| DRM | ⚠️ | Untested |
 
+
+- Bootloader: OpenCore 0.8.2 Mod (<a href="https://www.olarila.com/topic/24542-opencore_no_acpi-opencore-with-additional-featureschanges-implemented-how-to-use-this-fork/">OpenCore_No_ACPI</a>)
+
 ## Changelog
 
 <details>
 <summary>1.0</summary>
 	06/10/2022
 		* Release with OC Mod 0.8.1, all kext are up to date
+</details>
 
+<details>
 <summary>2.0</summary>
 	- 07/05/2022
 		* Bump OC to 0.8.2 (Moded)
@@ -132,7 +136,9 @@
 		* Fixed boot loop with HDMI port
 		* Fixed Power management
 		* Add new feature: Enable TRIM without use terminal to force enable
+</details>
 
+<details>
 <summary>2.1</summary>
 	- 07/30/2022
 		* NEW: Now you can rename CPU via `/config.plist/NVRAM/4D1FDA02-38C7-4A6A-9CC6-4BCCA8B30102/revcpuname`. Added memory tab in 'About this mac'. Also you can rename your GPU via `/config.plist/DeviceProperties/PciRoot(0x0)/Pci(0x2,0x0)/model`
