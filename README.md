@@ -144,15 +144,16 @@
 <details>
 <summary>Quick look</summary>
 
- ![lspcon_debug](./img/desktop-preview)
+ ![lspcon_debug](./img/desktop-preview.jpg)
 
- ![lspcon_debug](./img/launchpad)
+ ![lspcon_debug](./img/launchpad.jpg)
 
- ![lspcon_debug](./img/mission-control)
- 
+ ![lspcon_debug](./img/mission-control.jpg)
+
  ![lspcon_debug](./img/icloud.jpg)
 
 </details>
+
 ## Credits
 
 - <a href="apple.com">Apple</a> for macOS.
