@@ -144,11 +144,11 @@
 <details>
 <summary>Quick look</summary>
 
- ![lspcon_debug](./img/desktop-preview.jpg)
+ ![lspcon_debug](./img/desktop-preview.png)
 
- ![lspcon_debug](./img/launchpad.jpg)
+ ![lspcon_debug](./img/launchpad.png)
 
- ![lspcon_debug](./img/mission-control.jpg)
+ ![lspcon_debug](./img/mission-control.png)
 
  ![lspcon_debug](./img/icloud.jpg)
 
