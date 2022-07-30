@@ -65,7 +65,7 @@
 </details>
 <br>
 <details>
-<summary>💻 Which macOS does the EFI supported for?</summary>
+<summary>💻 Which macOS does this EFI supported for?</summary>
 
 <br>
 
