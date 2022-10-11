@@ -128,6 +128,8 @@
 	* Add new SSDT-PLUG and new power management kext. Now you can change smbios to newer version or more.
 	* Remove unused patch and kext.
 	* Fix HDMI output problems.
+	* Add Inject EDID, now you can choose more resolution for your mac!
+	* Fix double wake at lid when computer sleep.
 
 ## Attention
 
