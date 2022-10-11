@@ -123,9 +123,9 @@
 	* NEW DSDT: Rename EC0, BAT1 (this computer only have 1 battery), detele unused device.
 	* For more stable while using hack, <a href="https://github.com/CloverHackyColor/FakeSMC3_with_plugins">FakeSMC3</a> now will use with this EFI.
 	* Update kext to lastest version, Update OC to 0.8.6.
-	* Add PCIe to config.plist.
+	* Add PCIe port to config.plist.
 	* Change smbios to Macbook Pro.
-	* Add new SSDT-PLUG and new power management kext. Now you can change smbios to newer version or more.
+	* Add new SSDT-PLUG and new power management kext (CPUFriend(Friend)). Now you can change smbios to newer version without lossing PM.
 	* Remove unused patch and kext.
 	* Fix HDMI output problems.
 	* Add Inject EDID, now you can choose more resolution for your mac!
