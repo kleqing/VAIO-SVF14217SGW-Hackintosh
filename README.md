@@ -1,6 +1,6 @@
 <h1 align="center">Sony VAIO SVF14217SGW Hackintosh</h1> 
 
-![lspcon_debug](./img/desktoppewview.jpg)
+![lspcon_debug](./img/desktoppreview.jpg)
 <h6 align="center">Desktop preview</h6>
 
 ## Issues
