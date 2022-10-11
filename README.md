@@ -1,6 +1,6 @@
 <h1 align="center">Sony VAIO SVF14217SGW Hackintosh</h1> 
 
-![lspcon_debug](./img/desktop.jpg)
+![lspcon_debug](./img/desktoppewview.jpg)
 <h6 align="center">Desktop preview</h6>
 
 ## Issues
@@ -23,10 +23,7 @@
 		<br>
 		As you now, OpenCore are supported more OSes and faster than Chameleon (Legacy) and Clover!
 		<br>
-		Beside, there're also many error come with this bootloader. Like using DSDT instead SSDT. The main reason for this is there are lot of various kext support more hardware. That mean you needn't use DSDT anymore, only use SSDT and hot-patch. But the VAIO notebooks aren't! They required DDST to make macOS read their battery! (Basically, <a href="https://github.com/1Revenger1/ECEnabler">ECEnabler</a> didn't work with some VAIO notebooks, they need DSDT to read the battery). And that mean OpenCore will inject our patched DSDT to all OSes and it cause BDOS on Windows! 
-		<br>
-		Luckily, Olarila have make a version to make OpenCore didn't inject patched DSDT to all OSes. You can check this: <a href="https://github.com/OlarilaHackintosh/OpenCore_NO_ACPI">OpenCore_No_ACPI</a>
-		<br>
+		Beside, there're also many error come with this bootloader. Like using DSDT instead SSDT. The main reason for this is there are lot of various kext support more hardware. That mean you needn't use DSDT anymore, only use SSDT and hot-patch. But the VAIO notebooks aren't! They required DDST to make macOS read their battery! (Basically, <a href="https://github.com/1Revenger1/ECEnabler">ECEnabler</a> didn't work with some VAIO notebooks, they need DSDT to read the battery). And that mean OpenCore will inject our patched DSDT to all OSes and it cause BDOS on Windows!
 		<br>
 		For more information about inject ACPI inject, you can read <a href="https://dortania.github.io/OpenCore-Install-Guide/why-oc.html#does-opencore-always-inject-smbios-and-acpi-data-into-other-oses">here</a>
 	</details>
@@ -40,6 +37,8 @@
 		<br>
 		I've tried using ECEnabler.kext and BrightnessKeys.kext for 2 months ago. Everything working fine but the battery isn't, it didn't show in the menu bar. When I pluged the AC Adapter, the battery just appeared at the same time. And that was the reason why I choose DSDT patched. For the brightness key, I just realized that if I don't put the DSDT.aml into /EFI/OC/ACPI, I can use the function key like normal. But with the battery problem, I think that sometime DSDT was the best choice than using SSDT with 'delayed' kext.
 	</details>
+
+	* EDIT: I found the problem that can be fix by using DSDT but it's very complicated. For more details, I cann't share to you because not everyone has this problems!
 
 ## Overview
 
@@ -58,6 +57,7 @@
 | Memory | 1333MHz DDR3 2x4GB |
 | Audio | Realtek ALC 233 |
 | Ethernet | Realtek RTL 8111 |
+| Card Reader | RTS5209 |
 | Wifi | BCM94352HMB |
 | Hard Disk Drive | Netac SSD 256GB |
 | Second Disk Drive | HGST 500GB |
@@ -99,53 +99,55 @@
 	| USB Port | ✅ | |
 	| Audio | ✅ | Add `alcid=27` to boot-arg or add layout-id to DeviceProperties |
 	| Battery | ✅ | |
-	| TouchPad | ✅ | Recommend using 2.2.4 for compatibility issues|
+	| TouchPad | ✅ | Recommend using 2.2.4 for compatibility issues |
 	| Build-in Microphone | ✅ | |
 	| Headphone & Speaker | ✅ | |
-	| Camera | ✅ | |
+	| Camera | ✅ | It work but my camera has been broken |
 	| Wifi & Bluetooth | ✅ | Need to replace |
 	| Airdrop & Handoff | ✅ | Required wifi card support bluetooth 4.0 |
 	| iMessage, Facetime & AppStore | ✅| |
 	| Sleep | ✅ | |
 	| HDMI |  ✅ | |
-	| SD Card | ❌ | Can turn off by using SSDT to save battery |
+	| SD Card | ✅ | Although Windows show at RTS5208 but macOS still detect RTS5209! |
 	| WWAN | ❌ | |
+	| NFC | ❌ | |
 	| FileVault | ⚠️ | Untested |
 	| DRM | ⚠️ | Untested |
 
 
-- Bootloader: OpenCore 0.8.2 Mod (<a href="https://www.olarila.com/topic/24542-opencore_no_acpi-opencore-with-additional-featureschanges-implemented-how-to-use-this-fork/">OpenCore_No_ACPI</a>)
+- Bootloader: OpenCore 0.8.6 (No ACPI)
 
 ## Changelog
 
-- 07/30/2022 (v2.1)
-	* NEW: Now you can rename CPU via `/config.plist/NVRAM/4D1FDA02-38C7-4A6A-9CC6-4BCCA8B30102/revcpuname`. Added memory tab in 'About this mac'. Also you can rename your GPU via `/config.plist/DeviceProperties/PciRoot(0x0)/Pci(0x2,0x0)/model`
-	* Brand new DSDT: Fix battery always show as 'Power Adaper', remove iGPU patched to fix broken Finder (11.6.8) and DRM issues. Fix macOS always get delayed to sleep.
-	* Downgrade VoodooPS2 from 2.2.9 to 2.2.4 to make system booting better (No more issues with VoodooPS2 when booting)
-	* Remove unnecessary patched in `/config.plist/ACPI/patched`. Add USB renamed patched to fix sleep issues.
-	* Add SSDT-USB-Reset.aml for USB renamed. Added SSDT-PM.aml, SSDT-PNLF.aml and SSDT-EC.aml. EC, PNLF and PM has been removed in DSDT to make system working better.
-	* Update all kexts to lastest version (except VoodooPS2)
-	* Fix HDMI conX issues. Remove framebuffer-conx-pipe in `DeviceProperties` because my hacks didn't reboot when hdmi is pluged-in. Added support HDMI 2.0.
-	* Add boot-arg to support Sidecar on old iPad, allow rename CPU and bootloop problem with Big Sur
-	* VirtualSMC now be used for this version.
+- 11/10/2022 (0.8.6)
+	* NEW DSDT: Rename EC0, BAT1 (this computer only have 1 battery), detele unused device.
+	* For more stable while using hack, <a href="https://github.com/CloverHackyColor/FakeSMC3_with_plugins">FakeSMC3</a> now will use with this EFI.
+	* Update kext to lastest version, Update OC to 0.8.6.
+	* Add PCIe to config.plist.
+	* Change smbios to Macbook Pro.
+	* Add new SSDT-PLUG and new power management kext. Now you can change smbios to newer version or more.
+	* Remove unused patch and kext.
+	* Fix HDMI output problems.
 
 ## Attention
 
 - Some feature are not working correctly. Please report to me if you found any issues that didn't working.
 - Please change the SMBIOS in my config.plist to your SMBIOS. You can use <a href="https://github.com/corpnewt/GenSMBIOS">GenSMBIOS</a>
-- I didn't tested this EFI in monterey. If you want to tried this, please add `-no_compat_check` or change SMBIOS to `MacBookPro11,4` (Recommended). You can fix HD 4000 by using OCLP (Required disable SIP)
+- I didn't tested this EFI in Monterey. If you want to tried this, please add `-no_compat_check` or change SMBIOS to `MacBookPro11,4` (Recommended). You can fix the graphics card (HD 4000) by using OCLP (Required disable SIP)
 
 ## Preview
 <details>
 <summary>Quick look</summary>
 
- ![lspcon_debug](./img/desktop-preview.png)
+ ![lspcon_debug](./img/desktop.png)
 
  ![lspcon_debug](./img/launchpad.png)
 
  ![lspcon_debug](./img/mission-control.png)
 
  ![lspcon_debug](./img/icloud.jpg)
+
+ ![lspcon_debug](./img/pcie.png)
 
 </details>
 
@@ -154,4 +156,3 @@
 - <a href="apple.com">Apple</a> for macOS.
 - Acidanthera, Mieze, USBToolBox, etc. for all the kext
 - Rehabman for the patched DSDT file
-- Olarila for Bootloader
