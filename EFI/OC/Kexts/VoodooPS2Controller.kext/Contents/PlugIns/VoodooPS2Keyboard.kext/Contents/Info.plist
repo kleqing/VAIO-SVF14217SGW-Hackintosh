@@ -210,15 +210,9 @@
 						<array>
 							<string>;This section maps ps2 codes (packet format) received quickly (macros) into fake ps2 codes (packet format)</string>
 							<string>;Fn+F1</string>
-							<data>
-							//8CbgAAAAACWwEZ
-							</data>
-							<data>
-							//8C7gAAAAAC2wGZ
-							</data>
-							<data>
-							//8C7gAAAAABmQLb
-							</data>
+							<data>//8CbgAAAAACWwEZ</data>
+							<data>//8C7gAAAAAC2wGZ</data>
+							<data>//8C7gAAAAABmQLb</data>
 						</array>
 						<key>MaximumMacroTime</key>
 						<integer>35000000</integer>
@@ -284,6 +278,10 @@
 					<key>Custom ADB Map</key>
 					<array>
 						<string>;Items must be strings in the form of scanfrom=adbto (in hex)</string>
+						<string>e037=64</string>
+						<string>e045=46</string>
+						<string>46=46</string>
+						<string>45=46</string>
 					</array>
 					<key>Custom PS2 Map</key>
 					<array>
