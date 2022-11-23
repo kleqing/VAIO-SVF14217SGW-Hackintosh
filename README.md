@@ -17,13 +17,14 @@
 		<br>
 		For full guide about this, please read <a href="https://www.olarila.com/topic/13072-dual-boot-guide-clover-and-open-core/">here</a></del>
 		<br>
-		There's a new way to add OpenCore to the entry, that's using 'bcdedit' on windows through ```cmd```. Type `bcdedit /set "{bootmgr}" path \EFI\OC\OpenCore.efi` and then reboot and enjoy!
+		There's a new way to add OpenCore to the entry, that's using 'bcdedit' on windows through cmd. Type: bcdedit /set "{bootmgr}" path \EFI\OC\OpenCore.efi, then reboot and enjoy!
+		<br>
 		Credit: <a href='https://www.rodsbooks.com/refind/installing.html#windows'>rEFInd: Installing and Uninstalling</a> 
 
 	</details>
 
 	<details>
-		<summary>OpenCore injector</summary>
+		<summary>OpenCore injection</summary>
 		<br>
 		As you now, OpenCore are supported more OSes and faster than Chameleon (Legacy) and Clover!
 		<br>
@@ -123,17 +124,9 @@
 
 ## Changelog
 
-- 11/10/2022 (0.8.6)
-	* NEW DSDT: Rename EC0, BAT1 (this computer only have 1 battery), detele unused device.
-	* For more stable while using hack, <a href="https://github.com/CloverHackyColor/FakeSMC3_with_plugins">FakeSMC3</a> now will use with this EFI.
-	* Update kext to lastest version, Update OC to 0.8.6.
-	* Add PCIe port to config.plist.
-	* Change smbios to Macbook Pro.
-	* Add new SSDT-PLUG and new power management kext (CPUFriend(Friend)). Now you can change smbios to newer version without lossing PM.
-	* Remove unused patch and kext.
-	* Fix HDMI output problems.
-	* Add Inject EDID, now you can choose more resolution for your mac!
-	* Fix double wake at lid when computer sleep.
+- Unknow date
+	* Update OC (newer version)
+	* Now reset nvram didn't reset the boot entry, thanks for <a href='https://github.com/5T33Z0/OC-Little-Translated/tree/main/A_Config_Tips_and_Tricks#vi-resolving-issues-with-nvram'>OC Little Guide</a>
 
 ## Attention
 
@@ -160,5 +153,7 @@
 ## Credits
 
 - <a href="apple.com">Apple</a> for macOS.
-- Acidanthera, Mieze, USBToolBox, etc. for all the kext
-- Rehabman for the patched DSDT file
+- Acidanthera, Mieze, USBToolBox, etc. for all the kext.
+- Rehabman for the patched DSDT files.
+
+## This project can be down soon in January since I will change from Hackintosh to real mac. That also mean both OpenCore_No_ACPI and this repository will be down soon. You can download the last version and then update the config (and efi files too). I'm very appreciate to pull all your request!
