@@ -120,14 +120,14 @@
 	| DRM | ⚠️ | Untested |
 
 
-- Bootloader: OpenCore 0.8.8 (No ACPI)
+- Boot loader: OpenCore 0.8.8 (No ACPI)
 
 ## Changelog
 
 - Unknow date
-	* Update OC to 0.8.8
+	* Updated OC to 0.8.8
 	* Now reset nvram didn't reset the boot entry, thanks for <a href='https://github.com/5T33Z0/OC-Little-Translated/tree/main/A_Config_Tips_and_Tricks#vi-resolving-issues-with-nvram'>OC Little Guide</a>
-	* Update kexts
+	* Updated kexts
 
 ## Attention
 
