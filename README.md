@@ -158,5 +158,5 @@
 - Rehabman for the patched DSDT files.
 
 ## My last word
-- This project can be down soon in January since I will change from Hackintosh to real mac. 
+- This project can be down soon in January since I will change from Hackintosh to Macintosh. 
 - That also mean both OpenCore_No_ACPI and this repository will be down soon. You can download the last version and then update the config (and efi files too). I'm very appreciate to pull all your request! ;)
