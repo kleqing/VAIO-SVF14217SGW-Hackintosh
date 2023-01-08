@@ -1,5 +1,9 @@
 <h1 align="center">Sony VAIO SVF14217SGW Hackintosh</h1> 
 
+## My last word with this repository
+- This project can be down soon in January (2023) since I will change from Hackintosh to Macintosh. 
+- That also mean both OpenCore_No_ACPI and this repository will be down soon. You can download the last version and then update the config (and efi files too). I'm very appreciate to pull all your request! ;)
+
 ![lspcon_debug](./img/desktoppreview.jpg)
 <h6 align="center">Desktop preview</h6>
 
@@ -120,13 +124,12 @@
 	| DRM | ⚠️ | Untested |
 
 
-- Boot loader: OpenCore 0.8.8 (No ACPI)
+- Boot loader: OpenCore 0.8.9 (No ACPI)
 
 ## Changelog
 
-- Unknow date
-	* Updated OC to 0.8.8
-	* Now reset nvram didn't reset the boot entry, thanks for <a href='https://github.com/5T33Z0/OC-Little-Translated/tree/main/A_Config_Tips_and_Tricks#vi-resolving-issues-with-nvram'>OC Little Guide</a>
+- Sun, 8 Jan 2023
+	* Updated OC to 0.8.9
 	* Updated kexts
 
 ## Attention
@@ -156,7 +159,3 @@
 - <a href="apple.com">Apple</a> for macOS.
 - Acidanthera, Mieze, USBToolBox, etc. for all the kext.
 - Rehabman for the patched DSDT files.
-
-## My last word
-- This project can be down soon in January since I will change from Hackintosh to Macintosh. 
-- That also mean both OpenCore_No_ACPI and this repository will be down soon. You can download the last version and then update the config (and efi files too). I'm very appreciate to pull all your request! ;)
