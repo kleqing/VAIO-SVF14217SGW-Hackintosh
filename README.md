@@ -47,7 +47,7 @@
 		I've tried using ECEnabler.kext and BrightnessKeys.kext for 2 months ago. Everything working fine but the battery isn't, it didn't show in the menu bar. When I pluged the AC Adapter, the battery just appeared at the same time. And that was the reason why I choose DSDT patched. For the brightness key, I just realized that if I don't put the DSDT.aml into /EFI/OC/ACPI, I can use the function key like normal. But with the battery problem, I think that sometime DSDT was the best choice than using SSDT with 'delayed' kext.
 	</details>
 
-	* EDIT: I found the problem that can be fix by using DSDT but it's very complicated. For more details, I cann't share to you because not everyone has this problems!
+	* EDIT: I found the problem that can be fix by using DSDT but it's very complicated. For more details, I can't share to you because not everyone has this problems!
 
 ## Overview
 
@@ -63,7 +63,7 @@
 |   CPU  | Intel Core i3 3227U 1.90 GHz |
 |   GPU   | Intel HD Graphics 4000 | 
 |  dGPU | NVIDIA GeForce GT 740M |
-| Memory | 1333MHz DDR3 2x4GB |
+| Memory | 8GB 1333MHz DDR3 (2x4GB) |
 | Audio | Realtek ALC 233 |
 | Ethernet | Realtek RTL 8111 |
 | Card Reader | RTS5209 |
@@ -94,9 +94,9 @@
 	Boot mode: UEFI<br>
 	1st boot priority: External Device<br>
 	External boot device: Enable<br>
-	Wake on LAN: Unsupported<br>
+	Wake on LAN: Unsupported
 </details>
-
+<br>
 - Current Status
 	| Feature | Status | Note |
 	| ------------- | ------------- | ------------- | 
@@ -112,7 +112,7 @@
 	| Build-in Microphone | ✅ | |
 	| Headphone & Speaker | ✅ | |
 	| Camera | ✅ | It work but my camera has been broken |
-	| Wifi & Bluetooth | ✅ | Need to replace |
+	| Wifi & Bluetooth | ✅ | Need to be replace |
 	| Airdrop & Handoff | ✅ | Required wifi card support bluetooth 4.0 |
 	| iMessage, Facetime & AppStore | ✅| |
 	| Sleep | ✅ | |
@@ -158,4 +158,4 @@
 
 - <a href="apple.com">Apple</a> for macOS.
 - Acidanthera, Mieze, USBToolBox, etc. for all the kext.
-- Rehabman for the patched DSDT files.
+- Rehabman for the patched DSDT files & MacIASL.
