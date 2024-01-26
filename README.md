@@ -96,7 +96,7 @@
 	External boot device: Enable<br>
 	Wake on LAN: Unsupported
 </details>
-<br>
+
 - Current Status
 	| Feature | Status | Note |
 	| ------------- | ------------- | ------------- | 
